@@ -4,6 +4,13 @@ const randomTag = document.querySelector("footer img")
 
 let data = []
 
+fetch("quotes.json")
+    .then( response => response.json())
+    .then( jsonData => {
+        data = jsonData
+        getQuote()
+})
+
 const getQuote = function () {
 
     if (data.length > 0) {
