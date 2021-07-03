@@ -49,3 +49,23 @@ footer {
     text-align: center;
     padding: 30px;
 }
+
+@media (max-width: 440px) {
+    
+    body {
+        font-size: 14px;
+        background: no-repeat;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h1.long {
+        font-size: 22px;
+    }
+
+    h1, p {
+        width: 280px;
+    }
+}
